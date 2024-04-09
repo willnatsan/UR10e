@@ -9,7 +9,7 @@ from ament_index_python import get_package_share_directory
 
 def generate_launch_description():
     # Configure URDF file
-    urdf_pkg_share = get_package_share_directory('ur10e_descritpion')
+    urdf_pkg_share = get_package_share_directory('ur10e_description')
     urdf_path_local = 'urdf/ur10e_robotiq_2f_85.urdf.xacro'
     urdf_path_global = join(urdf_pkg_share, urdf_path_local)
     robot_description_raw = xacro.process_file(urdf_path_global).toxml()
