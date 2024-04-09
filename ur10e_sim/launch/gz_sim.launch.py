@@ -15,9 +15,9 @@ def generate_launch_description():
     robot_description_raw = xacro.process_file(urdf_path_global).toxml()
 
     # Launch Gazebo 
-    gz_share_dir = get_package_share_directory('ros_gz_sim')
+    gz_pkg_share = get_package_share_directory('ros_gz_sim')
     launch_gazebo = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource([join(gz_share_dir, 'launch', 'gz_sim.launch.py')])
+        PythonLaunchDescriptionSource([join(gz_pkg_share, 'launch', 'gz_sim.launch.py')])
     )
 
     # Configure nodes to launch
