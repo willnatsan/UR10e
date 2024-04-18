@@ -1,7 +1,7 @@
 import xacro
 from os.path import join
 from launch import LaunchDescription
-from launch.actions import IncludeLaunchDescription, ExecuteProcess, RegisterEventHandler
+from launch.actions import IncludeLaunchDescription, RegisterEventHandler
 from launch.event_handlers import OnProcessExit
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch_ros.actions import Node
