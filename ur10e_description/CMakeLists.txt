@@ -11,7 +11,7 @@ find_package(ur_description REQUIRED)
 find_package(robotiq_description REQUIRED)
 
 install (
-  DIRECTORY config launch rviz urdf 
+  DIRECTORY config launch meshes rviz urdf 
   DESTINATION share/${PROJECT_NAME}
 )
 
